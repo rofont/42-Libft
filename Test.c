@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: romainfontaine <romainfontaine@student.    +#+  +:+       +#+        */
+/*   By: romain <romain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 16:25:11 by romainfonta       #+#    #+#             */
-/*   Updated: 2022/11/10 21:23:39 by romainfonta      ###   ########.fr       */
+/*   Updated: 2023/03/24 11:45:13 by romain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <strings.h>
-#include "libft.h"
+#include "./include/libft.h"
 
 /*ft_atoi
 int main(void)
@@ -187,7 +187,7 @@ int main(void)
     char **tab;
     unsigned int    i;
     i = 0;
-    tab = ft_split("   lorem ipsum dolor sit amet,    consectetur adipiscing elit. Sed non risus. Suspendisse     ", ' ');
+    tab = ft_split("   lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse     ", ' ');
     if (!tab[0])
         printf("ok\n");
     while (tab[i] != NULL)
